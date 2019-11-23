@@ -3,9 +3,9 @@ using namespace std;
 vector<int> reorder_instructions(vector<set<int>> &out,vector<set<int>> &in)
 {
 	int n=out.size();
-	set<int> candidate_nodes;// candidate nodes which can be removed at any stage, all the dependent instructions have been executed
-	int dependancy[n];//0 means candidate node, -1 means already done, +ve number is trivial.
-	// memset(dependancy,0,sizeof(dependancy));
+	set<int> candidate_nodes;   // candidate nodes which can be removed at any stage, all the dependent instructions have been executed
+	int dependancy[n];          //0 means candidate node, -1 means already done, +ve number is trivial.
+
 	for(int i=0;i<n;i++)
 	{
 		dependancy[i]=in[i].size();
