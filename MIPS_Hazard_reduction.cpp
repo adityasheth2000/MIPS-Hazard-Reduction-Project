@@ -6,10 +6,6 @@ using namespace std;
     Statement type: add w1 w2 w3
 */
 
-map<string,string> reg_to_binary;
-map<string,int> word_to_line;
-
-
 vector<string> Split_into_words(string str) 
 { 
     vector<string> v;
